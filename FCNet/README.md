@@ -2,13 +2,21 @@
 
 ## For FCNet experiments
 
-* What the task and dataset looks like?
+* What do the task and dataset looks like?
 
 The task is a binary classification task. The sythesized dataset is shown as below figure, where blue dots and red dots refer to two seperate classes and the decision boundary is therefore the X-shape boundary in the 2d dimension input space.
 
 <!-- ![width=200pt](./gen_data.svg) -->
 <p align="center">
-<img src="./gen_data.svg" width="400">
+<img src="./figures/gen_data.svg" width="200">
+</p>
+
+* What does the network looks like?
+
+The network consists of only two MLP layers with ReLu activation in between. Since the input space is 2-dimensional and the output should also be logits of two classes, the input dimension and output dimension are all two. While the hidden dimension is adjustable and we perform the ablation study over it.
+
+<p align="center">
+<img src="./figures/network.png" width="200">
 </p>
 
 
